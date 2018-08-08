@@ -1,0 +1,215 @@
+/* CSS Document */
+
+/*Font declarations*/
+@font-face {
+    font-family: 'Bitter';
+    src: url('../_fonts/Bitter-Regular-webfont.eot');
+    src: url('../_fonts/Bitter-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/Bitter-Regular-webfont.woff') format('woff'),
+         url('../_fonts/Bitter-Regular-webfont.ttf') format('truetype'),
+         url('../_fonts/Bitter-Regular-webfont.svg#BitterRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bitter';
+    src: url('../_fonts/Bitter-Italic-webfont.eot');
+    src: url('../_fonts/Bitter-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/Bitter-Italic-webfont.woff') format('woff'),
+         url('../_fonts/Bitter-Italic-webfont.ttf') format('truetype'),
+         url('../_fonts/Bitter-Italic-webfont.svg#BitterItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Bitter';
+    src: url('../_fonts/Bitter-Bold-webfont.eot');
+    src: url('../_fonts/Bitter-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/Bitter-Bold-webfont.woff') format('woff'),
+         url('../_fonts/Bitter-Bold-webfont.ttf') format('truetype'),
+         url('../_fonts/Bitter-Bold-webfont.svg#BitterBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DroidSans';
+    src: url('../_fonts/DroidSans-webfont.eot');
+    src: url('../_fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/DroidSans-webfont.woff') format('woff'),
+         url('../_fonts/DroidSans-webfont.ttf') format('truetype'),
+         url('../_fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DroidSans';
+    src: url('../_fonts/DroidSans-Bold-webfont.eot');
+    src: url('../_fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../_fonts/DroidSans-Bold-webfont.woff') format('woff'),
+         url('../_fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
+         url('../_fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+/*Global styles -----------------------------------------------------------------------------------------------------------*/
+
+/*limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;
+
+}
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+header {
+	width: 100%;
+}
+html {
+
+}
+fullPage
+{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url(../_images/colbert-background2.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+body {
+/*	font: 100% DroidSans, Arial, Helvetica, sans-serif;
+*/	font: 100% Bitter, Arial, Helvetica, sans-serif;line-height: 1.5;
+	font-weight: normal;
+	font-style: normal;
+	height: 100%;
+	width: 100%;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	background: url(../_images/diag_pattern.png);
+}
+p {
+	margin-bottom: 1em;
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+/* Global classes */
+
+.topColor {
+/*	background-color: rgb(200,255,255);
+*/	
+}
+.middleColor {
+/*	background-color: rgb(215,255,255);
+*/}
+.tableColor {
+	background-color: rgb(225,255,255);
+	background-image: url(../_images/no-texture-background3.jpg);
+}
+
+/*layout styles*/ 
+body {
+	width: 960px;
+	position: relative;
+	margin: 0 auto;
+}
+dl, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+dt {
+	font-weight: bold;
+	color: rgb(168, 88, 163);
+	margin-bottom: .2em
+}
+dd {
+	margin-bottom: 1em;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+#apDiv4 {
+	background-image: url(../_images/LOGO.png);
+	background-position: -120px -120px;
+}
+#apDiv5 {
+	background-image: url(../_images/Divider2.png);
+	background-position: 184px -10px;
+	background-repeat: no-repeat;
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+ul li {
+	list-style: inside;
+	padding-left:5px;
+
+}
+
+#apDiv5 h1 {
+	font-size: 36px;
+	color: rgb(0,0,204);
+}
+#apDiv5 h2 {
+	font-size: 20px;
+	bottom: 100px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+	margin-bottom: 1em;
+}
+form ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+form li {
+	margin: 0;
+	margin-bottom: 1em;
+	padding: 0;
+	font-size: .9em;
+}
+
+label.text {
+	display: block;
+}
+input[type="text"], input[type="email"], input[type="search"],textarea, select {
+	border: none;
+	background: rgb(249, 228, 130);
+	width: 318px;
+	padding: .5em;
+	font-size: 1em;
+}
+
+input:focus, textarea:focus {
+	border: 2px solid rgb(168, 88, 163);
+}
+input[type="submit"] {
+	background: rgb(2, 99, 174);
+	color: white;
+	padding: .2em .4em;
+	border: none;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.fullMonty {
+	background-color: rgb(233,233,237);
+}
